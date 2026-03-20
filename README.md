@@ -9,7 +9,7 @@ Add the OpenCode feature to your `devcontainer.json`:
 ```json
 {
     "features": {
-        "ghcr.io/dirien/devcontainers-feature-opencode/opencode:0": {}
+        "ghcr.io/dirien/devcontainer-features/opencode:0": {}
     }
 }
 ```
@@ -27,7 +27,7 @@ Pinning a version avoids hitting the GitHub API during installation, which can f
 ```json
 {
     "features": {
-        "ghcr.io/dirien/devcontainers-feature-opencode/opencode:0": {
+        "ghcr.io/dirien/devcontainer-features/opencode:0": {
             "version": "1.2.27"
         }
     }
@@ -45,7 +45,7 @@ This feature supports automatic configuration of API keys for OpenCode from a JS
 ```json
 {
     "features": {
-        "ghcr.io/dirien/devcontainers-feature-opencode/opencode:0": {}
+        "ghcr.io/dirien/devcontainer-features/opencode:0": {}
     },
     "mounts": [
         "source=${localEnv:HOME}/.local/share/opencode/auth.json,target=/tmp/opencode-auth.json,type=bind,consistency=cached"
@@ -62,7 +62,7 @@ If you don't have an existing `auth.json` file or want to use a different locati
 ```json
 {
     "features": {
-        "ghcr.io/dirien/devcontainers-feature-opencode/opencode:0": {}
+        "ghcr.io/dirien/devcontainer-features/opencode:0": {}
     },
     "mounts": [
         "source=${localWorkspaceFolder}/.opencode/auth.json,target=/tmp/opencode-auth.json,type=bind,consistency=cached"

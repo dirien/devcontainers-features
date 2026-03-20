@@ -7,7 +7,7 @@ Installs opencode by SST with API keys configuration
 
 ```json
 "features": {
-    "ghcr.io/dirien/devcontainers-feature-opencode/opencode:0": {}
+    "ghcr.io/dirien/devcontainer-features/opencode:0": {}
 }
 ```
 
@@ -21,7 +21,7 @@ Installs opencode by SST with API keys configuration
 
 ```json
 "features": {
-    "ghcr.io/dirien/devcontainers-feature-opencode/opencode:0": {
+    "ghcr.io/dirien/devcontainer-features/opencode:0": {
         "version": "1.2.27"
     }
 }
@@ -29,4 +29,4 @@ Installs opencode by SST with API keys configuration
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dirien/devcontainers-feature-opencode/blob/main/src/opencode/devcontainer-feature.json). Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dirien/devcontainer-features/blob/main/src/opencode/devcontainer-feature.json). Add additional notes to a `NOTES.md`._
