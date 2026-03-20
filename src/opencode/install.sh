@@ -1,5 +1,7 @@
 #!/bin/sh
 
+VERSION="${VERSION:-"latest"}"
+
 # Function to mount auth file - will be injected into shell rc files
 OPENCODE_AUTH_FUNCTION='
 _opencode_mount_auth() {
@@ -24,4 +26,8 @@ ZSHRC_PATH="/home/${_REMOTE_USER}/.zshrc"
 echo "$OPENCODE_AUTH_FUNCTION" >> "$ZSHRC_PATH"
 
 # Install opencode
-su - "$_REMOTE_USER" -c "curl -fsSL https://opencode.ai/install | bash"
+if [ "$VERSION" = "latest" ]; then
+    su - "$_REMOTE_USER" -c "curl -fsSL https://opencode.ai/install | bash"
+else
+    su - "$_REMOTE_USER" -c "curl -fsSL https://opencode.ai/install | VERSION=${VERSION} bash"
+fi
