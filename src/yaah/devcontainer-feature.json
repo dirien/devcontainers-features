@@ -1,0 +1,14 @@
+{
+    "name": "yaah",
+    "id": "yaah",
+    "version": "0.0.1",
+    "description": "Installs yaah (Yet Another Agent Harness) CLI from GitHub Releases",
+    "documentationURL": "https://github.com/dirien/yet-another-agent-harness",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Version of yaah to install (e.g., 0.1.8). Set to 'latest' to fetch the latest version from GitHub."
+        }
+    }
+}
