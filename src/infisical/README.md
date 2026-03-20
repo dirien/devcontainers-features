@@ -7,7 +7,7 @@ Installs Infisical CLI
 
 ```json
 "features": {
-    "ghcr.io/danzilberdan/devcontainers/infisical:0": {}
+    "ghcr.io/dirien/devcontainers-features/infisical:0": {}
 }
 ```
 
@@ -21,4 +21,4 @@ Installs Infisical CLI
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/danzilberdan/devcontainers/blob/main/src/infisical/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dirien/devcontainers-features/blob/main/src/infisical/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
