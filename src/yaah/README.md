@@ -1,6 +1,7 @@
-# yaah (Yet Another Agent Harness)
 
-Installs the [yaah](https://github.com/dirien/yet-another-agent-harness) CLI binary from GitHub Releases.
+# yaah (yaah)
+
+Installs yaah (Yet Another Agent Harness) CLI from GitHub Releases
 
 ## Example Usage
 
@@ -14,8 +15,10 @@ Installs the [yaah](https://github.com/dirien/yet-another-agent-harness) CLI bin
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Version of yaah to install. Use 'latest' for the most recent release, or specify a version like '0.1.8'. | string | latest |
+| version | Version of yaah to install (e.g., 0.2.0). Set to 'latest' to fetch the latest version from GitHub. | string | latest |
 
-## OS Support
 
-This feature installs a statically linked binary and supports **linux** and **darwin** on **amd64** and **arm64** architectures.
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dirien/devcontainer-features/blob/main/src/yaah/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
