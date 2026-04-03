@@ -1,14 +1,19 @@
 {
     "name": "yaah",
     "id": "yaah",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Installs yaah (Yet Another Agent Harness) CLI from GitHub Releases",
     "documentationURL": "https://github.com/dirien/yet-another-agent-harness",
     "options": {
         "version": {
             "type": "string",
             "default": "latest",
-            "description": "Version of yaah to install (e.g., 0.2.0). Set to 'latest' to fetch the latest version from GitHub."
+            "description": "Version of yaah to install (e.g., 0.3.3). Set to 'latest' to fetch the latest version from GitHub."
+        },
+        "agent": {
+            "type": "string",
+            "default": "",
+            "description": "Agent profile to generate config for (e.g., claude, copilot, opencode, codex). Leave empty to skip generation."
         }
     }
 }

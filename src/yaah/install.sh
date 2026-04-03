@@ -2,6 +2,7 @@
 set -e
 
 VERSION="${VERSION:-"latest"}"
+AGENT="${AGENT:-""}"
 GITHUB_REPO="dirien/yet-another-agent-harness"
 INSTALL_DIR="/usr/local/bin"
 
@@ -67,3 +68,9 @@ tar -xzf "${TMP_DIR}/${ASSET_NAME}" -C "${TMP_DIR}"
 install -m 0755 "${TMP_DIR}/yaah" "${INSTALL_DIR}/yaah"
 
 echo "yaah ${VERSION} installed to ${INSTALL_DIR}/yaah"
+
+# Generate agent config if agent is specified
+if [ -n "${AGENT}" ]; then
+    echo "Generating config for agent: ${AGENT}"
+    su - "$_REMOTE_USER" -c "yaah generate -a ${AGENT}"
+fi
