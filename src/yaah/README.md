@@ -15,7 +15,8 @@ Installs yaah (Yet Another Agent Harness) CLI from GitHub Releases
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Version of yaah to install (e.g., 0.2.0). Set to 'latest' to fetch the latest version from GitHub. | string | latest |
+| version | Version of yaah to install (e.g., 0.3.3). Set to 'latest' to fetch the latest version from GitHub. | string | latest |
+| agent | Agent profile to generate config for (e.g., claude, copilot, opencode, codex). Leave empty to skip generation. | string | - |
 
 
 
